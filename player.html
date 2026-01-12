@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player - StreamFlix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="player-page">
+    <!-- Back Button -->
+    <div class="back-button-container">
+        <button class="back-button" onclick="goBack()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            Ana Sayfaya Dön
+        </button>
+    </div>
+
+    <!-- Video Player -->
+    <div class="player-container">
+        <div class="video-wrapper">
+            <video id="videoPlayer" controls playsinline webkit-playsinline>
+                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                Tarayıcınız video etiketini desteklemiyor.
+            </video>
+        </div>
+
+        <!-- Video Info -->
+        <div class="video-info">
+            <h1 id="videoTitle" class="video-title">Yükleniyor...</h1>
+            <div class="video-meta">
+                <span id="videoYear" class="meta-item">2006</span>
+                <span class="meta-separator">•</span>
+                <span id="videoDuration" class="meta-item">24dk</span>
+            </div>
+            <p id="videoDescription" class="video-description">
+                Video yükleniyor...
+            </p>
+            <div class="video-genres" id="videoGenres">
+                <span class="genre-tag">Shounen</span>
+                <span class="genre-tag">Macera</span>
+                <span class="genre-tag">Karanlık Fantezi</span>
+                <span class="genre-tag">Fantastik Bilim Kurgu</span>
+                
+            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/player.js"></script>
+</body>
+</html>
